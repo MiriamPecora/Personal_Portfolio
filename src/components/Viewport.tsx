@@ -130,7 +130,7 @@ export default function Viewport() {
               src={trashMessage.img}
               alt="reaction"
               width={200}
-              height={65}
+              height={200}
               className="object-contain absolute lg:bottom-16 bottom-9 ms-9"
             />
           </div>

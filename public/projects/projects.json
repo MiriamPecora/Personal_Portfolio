@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Eph3m",
+    "slug": "eph3m-react",
+    "icon": "/imgs/eph3m_icon.png",
+    "description": "This project is a personal exercise to experiment with and improve my skills in React and Tailwind by simulating a fashion-related e-commerce.",
+    "infos": "Eph3m was born from the idea of merging a futuristic UX with glitch and dystopian elements.",
+    "screenshots": [
+      "/imgs/eph3m_1.jpg",
+      "/imgs/eph3m_2.jpg",
+      "/imgs/eph3m_3.jpg"
+    ],
+    "videolink": "https://www.youtube.com/watch?v=CX0df9uMntU&themeRefresh=1",
+    "repolink": "https://github.com/MiriamPecora/React_Ephem",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "GSAP",
+      "React Router DOM",
+      "Framer Motion",
+      "Maath"
+    ]
+  },
+  {
+    "name": "Fraisette",
+    "slug": "fraisette-nextjs",
+    "icon": "/imgs/fraisette_icon.png",
+    "description": "A personal project simulating a small online bakery shop, created as an exercise to improve my skills with React, Next.js, and TailwindCSS.",
+    "infos": "This project draws inspiration from colorful and sweet-themed websites, aiming to recreate a lively and welcoming experience, like an online bakery selling snacks and homemade pastries.",
+    "screenshots": [
+      "/imgs/fraisette_1.jpg",
+      "/imgs/fraisette_2.jpg",
+      "/imgs/fraisette_3.jpg"
+    ],
+    "videolink": "https://www.youtube.com/watch?v=svy88Dm3tqM&themeRefresh=1",
+    "repolink": "https://github.com/MiriamPecora/Next.js_Fraisette",
+    "technologies": ["Next.js", "React", "Tailwind CSS"]
+  },
+  {
+    "name": "Level Design",
+    "slug": "level-design-projects",
+    "icon": "/level_design/level_design_icon.png",
+    "description": "A collection of speed level designs created over the years.",
+    "infos": "",
+    "screenshots": [
+      "/level_design/cemetery1.png",
+      "/level_design/cemetery2.png",
+      "/level_design/forest1.png",
+      "/level_design/forest2.png",
+      "/level_design/dungeon_horror.jpg"
+    ],
+    "videolink": "",
+    "repolink": "",
+    "technologies": ["Unreal Engine 4"]
+  }
+]

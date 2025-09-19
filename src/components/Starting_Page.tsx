@@ -15,7 +15,7 @@ export default function StartingPage({ onFinish }: { onFinish?: () => void }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-[var(--midnight)] text-green-600 font-mono flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-[var(--display-color)] text-green-600 font-mono flex items-center justify-center z-50">
       {!booting ? (
         <button
           className="px-6 py-3 border border-green-600 rounded hover:bg-green-300/20"

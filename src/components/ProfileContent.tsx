@@ -7,7 +7,8 @@ export default function ProfileContent() {
 
   const contentPage1 = (
     <p className="pb-2">
-      ▹One of my main areas of interest is{" "}
+      <span className="text-[var(--jasmine)]">▹</span> One of my main areas of
+      interest is{" "}
       <span className="text-[var(--jasmine)]">nostalgia-driven aesthetics</span>
       , especially those inspired by the 2000s. I love to explore how nostalgia
       motivates people to seek out elements that reflect their past experiences,
@@ -18,7 +19,7 @@ export default function ProfileContent() {
   const contentPage2 = (
     <div>
       <p className="pb-2">
-        ▹As a small “
+        <span className="text-[var(--jasmine)]">▹</span> As a small “
         <span className="text-[var(--jasmine)]">get to know me</span>” moment:
         outside of work, I&apos;m passionate about writing, reading, video games
         in general and watching a lot of movies.{" "}
@@ -32,7 +33,7 @@ export default function ProfileContent() {
   );
 
   return (
-    <div className="space-y-3 text-[var(--midnight)] font-mono text-center lg:text-justify">
+    <div className="space-y-3 text-[var(--midnight)] font-mono text-center lg:h-[320px] pe-3 lg:text-lg scrollbar-thin lg:overflow-y-scroll lg:text-justify">
       <div className="hidden md:block">
         {contentPage1}
         {contentPage2}

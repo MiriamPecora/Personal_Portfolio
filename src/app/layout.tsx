@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="flex items-center justify-center min-h-screen">
         <StartingPage />
         <div className="bg-[var(--sage)] max-w-[391] w-[391px] md:max-w-2xl md:w-2xl lg:max-w-3xl lg:w-3xl border-2 rounded-xl border-white shadow-2xl">
-          <main className="flex-1 w-full h-[500px] relative border-b border-[var(--midnight)] border-dotted rounded-t-xl">
+          <main className="flex-1 w-full h-[500px] relative border-b border-[var(--midnight)] shadow-xl border-dotted rounded-t-xl">
             {children}
           </main>
           <Footer />

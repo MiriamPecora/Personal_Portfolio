@@ -65,7 +65,7 @@ export default function Viewport() {
           </div>
         </div>
 
-        <div className="px-3 flex">
+        <div className="px-4 flex">
           <div
             className="relative"
             onMouseDown={() => startPress("links")}
@@ -103,13 +103,13 @@ export default function Viewport() {
               </p>
               <div className="flex justify-around gap-4">
                 <button
-                  className="bg-gradient-to-b from-gray-100 to-gray-500 border border-gray-600 rounded-xl px-4 py-2 font-semibold text-gray-800 hover:text-[var(--jasmine)] hover:from-green-200 hover:to-gray-600"
+                  className="bg-gradient-to-b font-mono text-lg from-gray-100 to-gray-500 border border-gray-600 rounded-xl px-4 py-2 font-semibold text-gray-800 hover:text-black hover:from-green-200 hover:to-gray-600"
                   onClick={() => handleTrashChoice("no")}
                 >
                   No
                 </button>
                 <button
-                  className="bg-gradient-to-b from-gray-100 to-gray-500 border border-gray-600 rounded-xl px-4 py-2 font-semibold text-gray-800 hover:text-[var(--jasmine)] hover:from-red-200 hover:to-gray-600"
+                  className="bg-gradient-to-b font-mono text-lg from-gray-100 to-gray-500 border border-gray-600 rounded-xl px-4 py-2 font-semibold text-gray-800 hover:text-black hover:from-red-200 hover:to-gray-600"
                   onClick={() => handleTrashChoice("yes")}
                 >
                   Yes
@@ -120,7 +120,7 @@ export default function Viewport() {
         )}
 
         {trashMessage && (
-          <div className="flex justify-center items-center flex-col bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 mt-2 mx-3">
+          <div className="flex justify-center items-center flex-col bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-black shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 mt-2 mx-3">
             <div className="relative">
               <p className="text-lg font-semibold text-center text-pretty wrap-break-word">
                 {trashMessage.text}
@@ -131,6 +131,7 @@ export default function Viewport() {
               alt="reaction"
               width={200}
               height={200}
+              unoptimized
               className="object-contain absolute lg:bottom-16 bottom-9 ms-9"
             />
           </div>

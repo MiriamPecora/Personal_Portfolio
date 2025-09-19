@@ -33,7 +33,7 @@ export default function ProjectsExplorer() {
         {projects.map((p) => (
           <button
             key={p.slug}
-            className="group items-center flex flex-col rounded-lg hover:shadow-lg hover:bg-[var(--midnight)]/25 focus:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] focus:bg-[var(--midnight)]/30"
+            className="group items-center flex flex-col rounded-lg hover:shadow-lg hover:bg-[var(--midnight)]/10 focus:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] focus:bg-[var(--midnight)]/20"
             onClick={() => router.push(`/projects_explorer/${p.slug}`)}
           >
             <Image
@@ -43,7 +43,7 @@ export default function ProjectsExplorer() {
               height={100}
               className="group-hover:animate-pulse duration-75 ease-in-out"
             />
-            <p className="pt-1 font-mono text-[var(--midnight)] py-1 mt-1">
+            <p className="font-mono tracking-wide text-lg text-[var(--midnight)] py-1 mt-1">
               {p.name}
             </p>
           </button>

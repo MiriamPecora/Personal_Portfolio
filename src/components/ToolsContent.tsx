@@ -57,7 +57,7 @@ export default function ToolsContent() {
   );
 
   return (
-    <div className="text-[var(--midnight)] lg:pt-4 font-mono text-center lg:h-[315px] lg:text-justify">
+    <div className="text-[var(--midnight)] lg:pt-4 font-mono text-center lg:h-[315px] lg:text-lg lg:text-justify">
       <div className="hidden md:block lg:flex lg:justify-between lg:px-6">
         {contentPage1}
         {contentPage2}

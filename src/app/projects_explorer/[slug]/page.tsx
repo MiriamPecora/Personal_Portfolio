@@ -59,15 +59,15 @@ export default function ProjectPage() {
     <>
       <div className="py-5 px-4 h-full w-full">
         <div className="py-5 px-4 h-full overflow-y-auto scrollbar-thin bg-[var(--taskbar)]/20 rounded-lg shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)]">
-          <h1 className="mt-3 mb-5 text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--midnight)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
+          <h1 className="mt-3 mb-5 text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--display-color)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.6),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
             {project.name}
           </h1>
 
-          <div className="text-start text-pretty text-lg md:text-xl lg:text-xl">
+          <div className="text-start text-pretty text-[var(--midnight)] text-lg md:text-xl lg:text-xl">
             <p className="font-mono">{project.description}</p>
             <p className="pt-2 pb-7 font-mono">{project.infos}</p>
           </div>
-          <h3 className="text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--midnight)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
+          <h3 className="text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--display-color)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
             Technologies used:
           </h3>
           {project.technologies?.length > 0 && (
@@ -75,7 +75,7 @@ export default function ProjectPage() {
               {project.technologies.map((tech, i) => (
                 <li
                   key={i}
-                  className="px-2 py-1 bg-gray-200 rounded-lg text-base border  bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)]"
+                  className="px-2 py-1 font-mono bg-gray-200 rounded-lg text-base border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-black hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.6),inset_-2px_-2px_3px_rgba(255,255,255,0.8)]"
                 >
                   {tech}
                 </li>
@@ -83,11 +83,11 @@ export default function ProjectPage() {
             </ul>
           )}
 
-          <h3 className="mb-3 text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--midnight)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
+          <h3 className="mb-3 text-lg font-semibold text-[var(--jasmine)] max-w-fit px-2 py-1 bg-[var(--display-color)]/45 shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] rounded-lg">
             Screenshots:
           </h3>
 
-          <div className="bg-gray-200 rounded-lg text-sm border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-3 px-4">
+          <div className="bg-gray-200 rounded-lg text-sm border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.6),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-3 px-4">
             {project.screenshots?.length > 0 && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {project.screenshots.map((src, i) => (
@@ -114,7 +114,7 @@ export default function ProjectPage() {
               {project.repolink && (
                 <button>
                   <Link
-                    className=" bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 px-3"
+                    className=" bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-black hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 px-3"
                     href={project.repolink}
                     target="_blank"
                   >
@@ -125,7 +125,7 @@ export default function ProjectPage() {
               {project.videolink && (
                 <button>
                   <Link
-                    className="bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-[var(--midnight)] hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 px-3"
+                    className="bg-gray-200 rounded-lg border bg-gradient-to-b from-gray-100 to-gray-500 border-gray-800/60 font-semibold text-black hover:shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)] py-2 px-3"
                     href={project.videolink}
                     target="_blank"
                   >

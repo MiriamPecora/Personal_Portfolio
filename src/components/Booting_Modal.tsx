@@ -39,7 +39,7 @@ export default function BootingModal({ onFinish }: { onFinish?: () => void }) {
   }, []);
 
   return (
-    <div className="w-full h-full lg:w-xl flex flex-col justify-center px-3 py-4 text-green-400 font-mono text-lg bg-[var(--midnight)]">
+    <div className="w-full h-full lg:w-xl flex flex-col justify-center px-3 py-4 text-green-400 font-mono text-lg">
       {lines.map((line, i) => (
         <p key={i}>{line}</p>
       ))}

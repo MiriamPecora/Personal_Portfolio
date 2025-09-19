@@ -7,10 +7,11 @@ export default function EducationContent() {
 
   const contentPage1 = (
     <p className="pb-2">
-      ▹I’m a creative and eclectic person with a growth-oriented mindset.
-      Digital tools have always been my ideal medium to channel my passion for
-      video games and the web. My journey began at{" "}
-      <span className="text-[var(--jasmine)]">AIV</span>, where I studied
+      <span className="text-[var(--jasmine)]">▹</span> I’m a creative and
+      eclectic person with a growth-oriented mindset. Digital tools have always
+      been my ideal medium to channel my passion for video games and the web. My
+      journey began at <span className="text-[var(--jasmine)]">AIV</span>, where
+      I studied
       <span className="text-[var(--jasmine)]"> Game Design</span>. There, I
       discovered the excitement of crafting interactive and customizable
       experiences... a passion that naturally led me deeper into programming.
@@ -19,8 +20,9 @@ export default function EducationContent() {
 
   const contentPage2 = (
     <p className="pb-2">
-      ▹I later completed an intensive course at{" "}
-      <span className="text-[var(--jasmine)]">Boolean</span>, becoming a{" "}
+      <span className="text-[var(--jasmine)]">▹</span> I later completed an
+      intensive course at <span className="text-[var(--jasmine)]">Boolean</span>
+      , becoming a{" "}
       <span className="text-[var(--jasmine)]">Jr Full Stack Web Developer</span>
       . This allowed me to combine creativity with technical skills, delivering
       functional projects while strengthening key abilities in time management,
@@ -31,7 +33,8 @@ export default function EducationContent() {
 
   const contentPage3 = (
     <p>
-      ▹After my studies at Boolean, I continued exploring new{" "}
+      <span className="text-[var(--jasmine)]">▹</span> After my studies at
+      Boolean, I continued exploring new{" "}
       <span className="text-[var(--jasmine)]">frameworks </span>
       and <span className="text-[var(--jasmine)]">libraries</span>, motivated by
       the desire to refine my coding style and bring ideas to life.
@@ -44,7 +47,7 @@ export default function EducationContent() {
   };
 
   return (
-    <div className="text-[var(--midnight)] font-mono text-center lg:h-[315px] pe-3 scrollbar-thin lg:overflow-y-auto lg:text-justify">
+    <div className="text-[var(--midnight)] lg:text-lg font-mono text-center lg:h-[320px] pe-3 scrollbar-thin lg:overflow-y-auto lg:text-justify">
       <div className="hidden md:block">
         {contentPage1}
         {contentPage2}

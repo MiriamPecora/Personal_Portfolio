@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function LinksModal() {
   return (
-    <Folder title="links.txt" icon="🌐">
-      <div className="p-3 text-[var(--midnight)] font-mono bg-[var(--taskbar)]/10 hover:bg-[var(--taskbar)]/30 border border-gray-500 rounded-lg shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)]">
-        <h3 className="font-bold text-[var(--jasmine)] text-lg">
+    <Folder title="contacts" icon="🌐">
+      <div className="p-3 text-black font-mono bg-[var(--taskbar)]/10 hover:bg-[var(--taskbar)]/30 border border-gray-500 rounded-lg shadow-[inset_2px_2px_3px_rgba(0,0,0,0.4),inset_-2px_-2px_3px_rgba(255,255,255,0.8)]">
+        <h3 className="font-bold text-[var(--jasmine)] text-xl">
           Miriam Pecora
         </h3>
-        <p className="italic text-sm">Jr Full Stack Web Developer</p>
+        <p className="italic text-base">Jr Full Stack Web Developer</p>
 
         <hr className="my-2 border-gray-400" />
 
@@ -31,7 +31,7 @@ export default function LinksModal() {
 
         <hr className="my-2 border-gray-400" />
 
-        <p className="text-sm italic text-gray-600 text-center">
+        <p className="text-base italic text[var(--midnight)] text-center">
           Let’s connect!
         </p>
       </div>
